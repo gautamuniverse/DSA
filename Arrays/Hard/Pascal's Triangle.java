@@ -34,3 +34,34 @@ class Solution {
         return ans;
     }
 }
+
+
+
+//2d array Type
+
+//import java.util.*;
+//
+//public class Solution {
+//    private static int[] generateRow(int row) {
+//        int ans[] = new int[row + 1];
+// 
+//        ans[0] = 1;
+//        for (int col = 1; col <= row; col++) {
+//            // Generating each row element using the formula --> (prevAns * (rowNumber - colNumber)) / colNumber
+//            ans[col] = ans[col - 1] * (row - col + 1);
+//            ans[col] = ans[col] / col;
+//        }
+//
+//        return ans;
+//    }
+//
+//    public static int[][] pascalTriangle(int N) {
+//        int arr[][] = new int[N][];
+//
+//        for (int i = 0; i < N; i++) {
+//            arr[i] = generateRow(i);
+//        }
+//
+//        return arr;
+//    }
+//}
