@@ -37,8 +37,8 @@ public class Solution {
         // return count;
 
 
-        //O(N) -  Most Optimal solution - Prefix Sum (HashMap)
-        
+        //O(N * log N) -  Most Optimal solution - Prefix Sum (HashMap)
+        //Space - O(N)
         HashMap<Integer, Integer> map = new HashMap<>();
         
         //Initially put 0 prefix sum with count 1, it is essential for the calculation
