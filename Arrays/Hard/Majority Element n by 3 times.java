@@ -1,7 +1,6 @@
-import java.util.*;
-public class Solution {
-    public static List< Integer > majorityElement(int []nums) {
-        // Write your code here
+class Solution {
+    public List<Integer> majorityElement(int[] nums) {
+       // Write your code here
         //This approach is better and will take O(N * logn) time at max, worst case chaining may occur
         //So map can end up taking O(N). time complexity is O(N)
         // List<Integer> ans = new ArrayList<>();
@@ -86,6 +85,10 @@ public class Solution {
             ans.add(ele2);
         }
 
+        //This is essential in case all the elements are same.
+        if(ele1 == ele2)
+        ans.remove(ans.size()-1);
+        else
         Collections.sort(ans);
 
         return ans;
