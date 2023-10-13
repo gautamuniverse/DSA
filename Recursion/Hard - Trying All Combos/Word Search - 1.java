@@ -27,7 +27,7 @@ public class Solution {
         if(index >= word.length())
         return true;
 
-        if(row>= board.length || row <0 || col >= board[0].length || col < 0 || board[row][col] != word.charAt(index))
+        if(row>= board.length || row <0 || col >= board[0].length || col < 0 || board[row][col] == '#' || board[row][col] != word.charAt(index))
         {
             return false;
         }
