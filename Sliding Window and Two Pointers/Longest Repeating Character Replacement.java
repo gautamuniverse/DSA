@@ -1,3 +1,15 @@
+/*
+intuition: 
+
+for a substring, the condition that we need to follow to get the max length fof the repeating character stiring: 
+
+length of the substring - max frequent character in that substring <= K(replacement allowed)
+
+
+If this is met then we can keep considering more elements to the right, and whenever the conditions is not met then we have to reduce the window size to make the max replacement less than equal to k. */
+
+
+
 public class Solution {
     public static int longestRepeatingSubstring(String str, int k) {
         // Write your code here.
