@@ -42,6 +42,7 @@ public class Solution {
         HashMap<Integer, Integer> map = new HashMap<>();
         
         //Initially put 0 prefix sum with count 1, it is essential for the calculation
+		//Initialize index having zero sum as 1.
         map.put(0, 1); 
         int count =0;
         int preSum =0;
